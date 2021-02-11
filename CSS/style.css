@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
+body{
+	margin: 0;
+	font-family: 'Nunito Sans', sans-serif;
+}
+/*body *{
+	box-sizing: border-box;
+}*/
+header{
+	margin: 0;
+	position: sticky;
+	background-color: #131313;
+	/*flex-wrap: wrap;*/
+}
+.logo{
+	color: #E3B873;
+}
+.tel{
+	color: #E3B873;
+	margin-right: 45px;
+}
+.container{
+	max-width: 1263px;
+	margin: 0 auto;
+}
+.button{
+	background: #E3B873;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+	border-radius: 2px;
+	border: 0;
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Nunito Sans', sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.button1{
+	padding: 13px 33px;
+}
+.header_content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 83px;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.ul_head{
+	list-style: none;
+	display: flex;
+}
+.nav_head__item{
+	margin-right: 45px;
+}
+.nav_link{
+	text-decoration: none;
+	color: white;
+}
+
+.section1{
+	position: static;
+	background-blend-mode: multiply;
+	background-image: url('../images/image 4.3.jpg');
+	background-size: cover;
+	background-color: rgba(0,0,0,0.7);
+}
+.container1{
+	padding-left: 46px;
+	padding: 156px 22px 199px 22px;
+}
+.title{
+	max-width: 600px;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 53px;
+	text-transform: uppercase;
+	color: white;
+}
+.p1{
+	/*margin-top: 21px;*/
+	max-width: 581px;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 36px;
+	color: white;
+}
+.button2{
+	padding: 19px 41px;
+}
+.button3{
+	padding: 19px 22px;
+	background-color: rgba(255,255,255,0);
+	border: thin solid white;
+}
+
+.slider{
+
+}

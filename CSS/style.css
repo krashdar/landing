@@ -231,3 +231,197 @@ header{
 	justify-content: center;
 	align-items: center;
 }
+.container3_video{
+	background-image: url('../images/image 6.png');
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-color: rgba(0,0,0,0.8);
+
+	margin:22px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*position: static;*/
+	height: 434px;
+	width: 817px;
+}
+.container3_text{
+	max-width: 697px;
+	margin:0 auto;
+
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 37px;
+	text-align: center;
+	color: #363636;
+}
+.container3_form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 28px auto;
+	max-width: 823px;
+}
+.container3_form_label{
+	display: flex;
+	flex-direction: column;
+	padding-left: 35px;
+	margin-top: 10px;
+	margin-bottom:10px;
+
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(54, 54, 54, 0.5);
+}
+.container3_form_input{
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 23px;
+	color: #363636;
+
+	border:none;
+	border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+.button4{
+	margin: 10px;
+	padding: 16px 75px;
+	font-style: normal;
+}
+.checkbox_container{
+	margin: 20px auto;
+}
+.container3_form_checkbox{
+	position: absolute;
+  	z-index: -1;
+  	opacity: 0;
+  	/*margin-right: 8px;*/
+}
+.container3_form_checkbox+label{
+	display: inline-flex;
+  	align-items: center;
+  	user-select: none;
+}
+.container3_form_checkbox+label::before {
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid rgba(54, 54, 54, 0.3);
+	border-radius: 1px;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+/*чекед чекбокс*/
+.container3_form_checkbox:checked+label::before {
+	border-color: #E3B873;
+	background-color: #E3B873;
+	background-image: url('../images/galka.svg');
+}
+/*наведение курсора на чекбокс*/
+.container3_form_checkbox:not(:disabled):not(:checked)+label:hover::before{
+	border-color: #E3B873;
+}
+/*при нажатии на чекбокс*/
+.container3_form_checkbox:not(:disabled):active+label::before{
+
+}
+/*чекбокс в фокусе*/
+.container3_form_checkbox:focus+label::before{
+
+}
+/*disabled*/
+.container3_form_checkbox:disabled+label::before{
+
+}
+.container3_form_checkbox_label{
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 163.68%;
+
+	color: #181818;
+}
+
+.container4{
+}
+.container4_title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #181818;
+}
+.image_hummer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.primer{
+	display: flex;
+	flex-direction: column;
+	max-width: 392px; 
+}
+.primer1{
+	background-image: url('../images/redecorating.jpg');
+	background-size: contain;
+}
+.primer_info{
+	margin: 0 auto;
+	margin-top: 294px;
+	background-color: white;
+	max-width: 330px;
+}
+.primer_info_subtitle{
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+
+	color: #363636;
+	padding-left: 30px;
+}
+.primer_info_adv{
+	color: #959595;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 27px;
+}
+.primer_info_item{
+}
+.price_box{
+	display: flex;
+	margin-top: -30px;
+	background: #E3B873;
+	box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+.price_text{
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}

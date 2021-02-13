@@ -374,20 +374,33 @@ header{
 	justify-content: center;
 	align-items: center;
 }
+.primeri{
+	display: flex;
+	justify-content: space-between;
+}
 .primer{
 	display: flex;
 	flex-direction: column;
-	max-width: 392px; 
+	width: 392px; 
+	margin-top: 90px;
+	background-repeat: no-repeat;
 }
 .primer1{
 	background-image: url('../images/redecorating.jpg');
-	background-size: contain;
+}
+.primer2{
+	background-image: url('../images/overhaul.jpg');
+}
+.primer3{
+	background-image: url('../images/designer repair.jpg');
 }
 .primer_info{
 	margin: 0 auto;
 	margin-top: 294px;
 	background-color: white;
 	max-width: 330px;
+	padding: 0 48px 37px 5px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 .primer_info_subtitle{
 	font-family: Yeseva One;
@@ -397,7 +410,8 @@ header{
 	line-height: 25px;
 
 	color: #363636;
-	padding-left: 30px;
+	padding-left: 25px;
+	margin-bottom: 0;
 }
 .primer_info_adv{
 	color: #959595;
@@ -406,14 +420,21 @@ header{
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 27px;
+/*	padding-left: 50px;
+	padding-right: 52px;
+	/*padding-bottom: 36px;*/
 }
-.primer_info_item{
+.primer_info_adv_item{
+	text-indent: -5px;
 }
 .price_box{
 	display: flex;
+	padding: 17px 21px;
+	max-width: 228px;
 	margin-top: -30px;
 	background: #E3B873;
 	box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+	margin-left: 30px;
 }
 .price_text{
 	font-family: Yeseva One;
@@ -424,4 +445,82 @@ header{
 	text-transform: uppercase;
 
 	color: #FFFFFF;
+}
+@media screen and (max-width: 480px){
+	.primeri{
+		display: block;
+}
+	.primer_info{
+		margin-left: 0;
+		margin-top: 294px;
+		background-color: white;
+		max-width: 330px;
+		padding: 0 48px 37px 5px;
+		box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+	}
+}
+
+.advantages_and_form2{
+	margin-top: 135px;
+ 	display: flex;
+ 	background-image: url('../images/adv_back.png');
+ 	background-repeat: no-repeat;
+
+}
+.advantages{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	/*padding-left: 150px;
+	padding-right: 75px;*/
+	max-width: 703px; /*?*/
+	height: 645px;
+
+}
+.advantages_item{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	margin-top: 30px;
+	margin-bottom: 
+}
+.advantages_item_num{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/*padding: 5px;*/
+	margin: auto 0;
+	height: 56px;
+	width: 56px;
+	position: relative;
+	background: #E3B873;
+	border: 8px solid #FFFFFF;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+	border-radius: 30px;
+
+}
+.advantages_item_num_text{
+	padding: 5px;
+	margin:auto;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+.advantages_item_text{
+	display: inline-block;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+
+	color: #363636;
+	margin-left: 15px;
 }

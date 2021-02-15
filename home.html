@@ -7,7 +7,7 @@
 	<title>IC "Repair Design Project"</title>
 </head>
 <body>
-	<header>
+	<header id="HOME">
 		<div class="container header_content">
 			<span class="logo">IC "Repair Design Project"</span>
 			<nav>
@@ -17,7 +17,7 @@
 					<li class="nav_head__item"><a class="nav_link" href="">MEASUREMENT</a></li>
 					<li class="nav_head__item"><a class="nav_link" href="">TEAM</a></li>
 					<li class="nav_head__item"><a class="nav_link" href="">REVIEWS</a></li>
-					<li class="nav_head__item"><a class="nav_link" href="">CONTACNTS</a></li>
+					<li class="nav_head__item"><a class="nav_link" href="#CONTACTS">CONTACTS</a></li>
 				</ul>
 			</nav>
 			<div>
@@ -36,7 +36,7 @@
 				<button class="button button3">SUBMIT YOUR APPLICATION</button>
 			</div>
 		</section>
-		<section class="section2">
+		<section id="PROJECTS" class="section2">
 			<div class="container slider">
 				<ul class="slider_menu">
 					<li class="slider_menu_item"><a href="">Rostov-on-Don, Admiral</a></li>
@@ -80,13 +80,12 @@
 				<h3 class="container3_title">Online control</h3>
 				<div class="image_camera">
 					<img src="images/Rectangle 6.7.png">
-					<img src="images/vector.svg">
+					<img class="image_svg_subtitle" src="images/vector.svg">
 					<img src="images/Rectangle 6.8.png">
 				</div>
 				<div class="container3_video">
 					<!-- <img class="video_image" src="images/image 6.png"> -->
-					<img src="images/Group 8.png" alt="play video" title="play video">
-					<div class="container3_video--overlay"></div>
+					<img src="images/Group 8.png" class="bigimg" alt="play video" title="play video">
 				</div>
 				<hr noshade width="55px" color="#E3B873">
 				<p class="container3_text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! <br>
@@ -113,7 +112,7 @@
 				<h3 class="container4_title">TYPES OF REPAIR</h3>
 				<div class="image_hummer">
 					<img src="images/Rectangle 6.7.png">
-					<img src="images/hummer.svg">
+					<img class="image_svg_subtitle" src="images/hummer.svg">
 					<img src="images/Rectangle 6.8.png">
 				</div>
 				<div class="primeri">
@@ -196,14 +195,166 @@
 							<p class="advantages_item_text">Get a cost estimate and the timing of your future repairs</p>
 						</div>
 					</div>
-					<form class="form form2"></form>
+					<form class="form form2">
+						<p class=" form2_text">Leave a request for free<br>
+						departure of the measurer</p>
+						<label class="form2_label">
+							Name
+							<input class="form2_input" type="text" placeholder="What is your name:" name="Name" title="write a name here">
+						</label>
+						<label class="form2_label">
+							Phone
+							<input class="form2_input" placeholder="Your phone number:" type="text" name="Phone number">
+						</label>
+						<label class="form2_label">
+							Email
+							<input class="form2_input" placeholder="Your email:" type="text" name="Email">
+						</label>
+						<div class="checkbox_container cont_check2">
+							<input type="checkbox2" name="agreenment" class="container3_form_checkbox" value="yes">
+							<label for="agreenment2" class="container3_form_checkbox_label check2_label">I agree to the processing of personal data
+							</label>
+						</div>
+						<button class="button form2_button">Call the measurer</button>
+					</form>
+				</div>
+				<div class="svinuha">
+					<div class="svin_logo">
+						<img src="images/svinuha.svg">
+					</div>
+					<span class="svin_text">Help save 10 - 20% of the <br> cost of materials</span>
+				</div>
+			</div>
+		</section>
+		<section class="section5">
+			<div class="container container5">
+				<h3 class="container4_title">Our clients</h3>
+				<div class="image_hummer">
+					<img src="images/Rectangle 6.7.png">
+					<img class="image_svg_subtitle" src="images/ruki 43.svg">
+					<img src="images/Rectangle 6.8.png">
+				</div>
+				<p class="p_text cont5_text">80% of our customers recommend us to their friends and family.</p>
+			
+				<div class="clients">
+					<div class="clients_client">
+						<div class="client_container">
+							<div class="client_info">
+								<img class="client_photo" src="images/maria.png">
+								<h4 class="client_fio">Fedosova Maria Konstantinovna</h4>
+							</div>
+							<p class="client_text">I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. <br>
+							The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
+						</div>
+						<div class="client_box">
+							<div class="client_box_item kvadrats">
+								<img class="inbox_img" src="images/kvadrats.svg">
+								<span class="inbox_text">40 m2</span>
+							</div>
+							<div class="client_box_item">
+								<img class="inbox_img" src="images/days.svg">
+								<span class="inbox_text">48 days</span>
+							</div>
+						</div>
+					</div>
+					<div class="clients_client">
+						<div class="client_container">
+							<div class="client_info">
+								<img class="client_photo" src="images/sergey.png">
+								<h4 class="client_fio">Afanasyev Sergey Alexandrovich</h4>
+							</div>
+							<p class="client_text">I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
+						</div>
+						<div class="client_box">
+							<div class="client_box_item kvadrats">
+								<img class="inbox_img" src="images/kvadrats.svg">
+								<span class="inbox_text">90 m2</span>
+							</div>
+							<div class="client_box_item">
+								<img class="inbox_img" src="images/days.svg">
+								<span class="inbox_text">128 days</span>
+							</div>
+						</div>
+					</div>
+					<div class="clients_client">
+						<div class="client_container">
+							<div class="client_info">
+								<img class="client_photo" src="images/egor.png">
+								<h4 class="client_fio">Kiriev Egor Leonidovich</h4>
+							</div>
+							<p class="client_text">I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. <br>
+							The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
+						</div>
+						<div class="client_box">
+							<div class="client_box_item kvadrats">
+								<img class="inbox_img" src="images/kvadrats.svg">
+								<span class="inbox_text">56 m2</span>
+							</div>
+							<div class="client_box_item">
+								<img class="inbox_img" src="images/days.svg">
+								<span class="inbox_text">86 days</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section6">
+			<div class="container container6">
+				<form class="form form2 form3">
+					<h4 class="form3_subtitle">have any questions?</h4>
+					<label class="form2_label">
+						Name
+						<input class="form2_input" type="text" placeholder="What is your name:" name="Name" title="write a name here">
+					</label>
+					<label class="form2_label">
+						Phone
+						<input class="form2_input" placeholder="Your phone number:" type="text" name="Phone number">
+					</label>
+					<label class="form2_label">
+						Email
+						<input class="form2_input" placeholder="Your email:" type="text" name="Email">
+					</label>
+					<div class="checkbox_container">
+						<input type="checkbox2" name="agreenment" class="container3_form_checkbox" value="yes">
+						<label for="agreenment2" class="container3_form_checkbox_label check2_label">I agree to the processing of personal data
+						</label>
+					</div>
+					<button class="button form2_button form3_button">Submit</button>
+				</form>
+			</div>
+		</section>
+		<section class="section7">
+			<div class="container container7">
+				<div class="CONTACTS">
+					<h2 id="CONTACTS" class="CONTACTS_text">
+					Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
+					</h2>
+					<img src="images/Group 2.png" width="5%">
+					<img src="images/card.png" class="bigimg" width="70%" style="margin: 50px auto;">
 				</div>
 			</div>
 		</section>
 	</main>
 
 	<footer>
-		
+		<div class="container header_content">
+			<span class="logo">IC "Repair Design Project"</span>
+			<nav>
+				<ul class="ul_head">
+					<li class="nav_head__item"><a class="nav_link" href="#HOME">Home</a></li>
+					<li class="nav_head__item"><a class="nav_link" href="#PROJECTS">PROJECTS</a></li>
+					<li class="nav_head__item"><a class="nav_link" href="">MEASUREMENT</a></li>
+					<li class="nav_head__item"><a class="nav_link" href="">TEAM</a></li>
+					<li class="nav_head__item"><a class="nav_link" href="">REVIEWS</a></li>
+					<li class="nav_head__item"><a class="nav_link" href="#CONTACTS">CONTACTS</a></li>
+				</ul>
+			</nav>
+			<div>
+				<span><a class="tel" href="tel:+79287683239">+7 (928) 768-32-39</a></span>
+				<button class="button button1">Request a call</button>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>

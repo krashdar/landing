@@ -13,7 +13,17 @@ header{
 	background-color: #131313;
 	/*flex-wrap: wrap;*/
 }
-
+hr{
+	margin-top: 8px;
+	width: 32px;
+	border-color: #E3B873;
+}
+.hr_left{
+	margin-right: 0;
+}
+.hr_right{
+	margin-left: 0;
+}
 .image_svg_subtitle{
 	margin-left: 10px;
 	margin-right: 10px;
@@ -84,6 +94,15 @@ header{
 @media screen and (max-width: 480px){
 	nav{
 		display: none;
+	}
+	.button1{
+		display: none;
+	}
+	.tel{
+		text-decoration: none;
+		color: #FFFFFF;
+		margin: auto;
+		margin-left: 20%;
 	}
 }
 .container1{
@@ -216,6 +235,9 @@ header{
 	/*justify-content: flex-start;
 	align-items: flex-end;*/
 }
+.slider_arrows_item{
+	margin: 10px;
+}
 .slider_image{
 	display: flex;
 	margin: 32px 20px 12px 10px;
@@ -263,8 +285,9 @@ header{
 		height: 100%;
 	}
 }
-hr{
+.hr_center{
 	margin-top: 40px;
+	width: 55px;
 }
 .container3_text{
 	max-width: 697px;
@@ -318,61 +341,90 @@ hr{
 .checkbox_container{
 	margin: 20px auto;
 }
-.container3_form_checkbox{
-	position: absolute;
-  	z-index: -1;
-  	opacity: 0;
-  	/*margin-right: 8px;*/
+/* для элемента input c type="checkbox" */
+.custom-checkbox>input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
-.container3_form_checkbox+label{
-	display: inline-flex;
-  	align-items: center;
-  	user-select: none;
-}
-.container3_form_checkbox+label::before {
-	content: '';
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	flex-shrink: 0;
-	flex-grow: 0;
-	border: 1px solid rgba(54, 54, 54, 0.3);
-	border-radius: 1px;
-	margin-right: 0.5em;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 50% 50%;
-}
-/*чекед чекбокс*/
-.container3_form_checkbox:checked+label::before {
-	border-color: #E3B873;
-	background-color: #E3B873;
-	background-image: url('../images/galka.svg');
-}
-/*наведение курсора на чекбокс*/
-.container3_form_checkbox:not(:disabled):not(:checked)+label:hover::before{
-	border-color: #E3B873;
-}
-/*при нажатии на чекбокс*/
-.container3_form_checkbox:not(:disabled):active+label::before{
 
-}
-/*чекбокс в фокусе*/
-.container3_form_checkbox:focus+label::before{
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox>span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;  
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 163.68%;
 
+  color: #181818;
 }
-/*disabled*/
-.container3_form_checkbox:disabled+label::before{
 
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox>span::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid rgba(54, 54, 54, 0.3);
+  border-radius: 1px;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
 }
-.container3_form_checkbox_label{
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 163.68%;
 
-	color: #181818;
+/* стили при наведении курсора на checkbox */
+.custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before {
+  border-color: #E3B873;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox>input:not(:disabled):active+span::before {
+  background-color: rgba(227, 184, 115, 0.3);
+  border-color: #E3B873;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox>input:focus+span::before {
+  box-shadow: 0 0 0 0.2rem rgba(227, 184, 115, 0.3);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox>input:focus:not(:checked)+span::before {
+  border-color: #F1CF98;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox>input:checked+span::before {
+  border-color: #E3B873;
+  background-color: #E3B873;
+  background-image: url('../images/galka.svg');
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox>input:disabled+span::before {
+  background-color: rgba(227, 184, 115, 0.3);
+}
+/*чек на черном фоне*/
+.check_on_black>span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;  
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 163.68%;
+
+  color: #FFFFFF;
+}
+.check_on_black>span::before {
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .container4{
@@ -406,6 +458,9 @@ hr{
 	margin-top: 90px;
 	background-repeat: no-repeat;
 }
+
+
+
 .primer1{
 	background-image: url('../images/redecorating.jpg');
 }
@@ -470,7 +525,10 @@ hr{
 @media screen and (max-width: 480px){
 	.primeri{
 		display: block;
-}
+	}
+	.primer{
+		width: auto;
+	}
 	.primer_info{
 		margin-left: 0;
 		margin-top: 294px;
